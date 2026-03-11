@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author : Matty
+% Based on: https://github.com/jakegut/resume (which was itself based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  % \vspace{-4pt}
+  \color{gray}
+  \item
+  Last Updated on March 11th, 2026
+\end{flushright}
+
+\vspace{-5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Hoang Phuong Sang} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/Sangg123}{\underline{github.com/Sangg123}} $  $
+    \faIcon{code}
+    \href{https://www.Sangg123.com}
+    {\underline{Sangg123.com}} $  $
+    \faIcon{linkedin}
+    \href{https://www.linkedin.com/in/sang-ho%C3%A0ng-ph%C6%B0%C6%A1ng-5b05a73b6/}{\underline{linkedin.com/in/sang-hoang-phuong-5b05a73b6/}} $  $
+    \faIcon{envelope}
+    \href{mailto:hpsang22@gmail.com}
+    {\underline{hpsang22@gmail.com}}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {College University}{March 2026}
+      {Software Engineer}{Current GPA: 2.8/4.0}
+      
+    \resumeSubheading
+      {Sai Gon University }{March 2026}
+      {}{GPA: 2.8/4.0}
+
+    \vspace{-10pt}
+
+    \subsection{Coursework}
+      \textbf{Courses:} Object-Oriented Programming, Data Structures and Algorithms, Database Management Systems, Discrete Mathematics, Computer Architecture, Computer Networks, Advanced Web and Application Programming, Fundamentals of Artificial Intelligence, Object-Oriented Analysis and Design, Software Testing, Open Source Software Development, Linear Algebra, Calculus, Probability and Statistics \\
+      \textbf{Awards:}
+
+  \resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+     \textbf{Languages}{: C/C++, Python, Java, JavaScript/TypeScript, PHP, HTML/CSS, LaTeX} \\
+     
+     \textbf{Tools}{: Git/GitHub, Unix Shell, VS Code}
+     
+     % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     
+     % \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     
+    }}
+ \end{itemize}
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+        {\textbf{Tracking Bus} $|$ \footnotesize\emph{React, Nodejs, Nestjs, Posgresql, TypeScript, API (Google Maps), Git, Unix Shell, VS Code}}{Nov. 2025}
+        \resumeItemListStart
+            \resumeItem{Team project for a student transportation management system that shows current location}
+            \resumeItem{Developing a social network mobile application so parents can track their children's transportation location on a map in real time using the Google Maps API}
+            \resumeItem{Learning how to use React in combination with a database and server-side API}
+          \resumeItemListEnd
+    
+        \resumeProjectHeading
+        {\textbf{Watch Store} $|$ \footnotesize\emph{JavaScript, HTML/CSS, PHP, Git, Unix Shell, VS Code}}{Nov.2024}
+        \resumeItemListStart
+            \resumeItem{Developing a web application to sell watches so users can buy and pay online through the website}
+            \resumeItem{Collaborating with users to receive feedback and suggest additional features}
+            \resumeItem{Resolving issues related to asynchronous tasks}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+% -------------------- EXPERIENCE --------------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+          \resumeProjectHeading
+          {\textbf{Apex Tutoring}\vspace{8pt} $|$ \footnotesize\emph{Tutor}}{2022 -- Present}
+          \small{Routinely tutor K--12 students in math, coding, english, etc.}
+
+        \subsection{Hobbies}
+          
+          \resumeProjectHeading
+          {\textbf{Playing Badminton}\vspace{8pt}}{2011 -- Present}
+          {\small{played badminton at the commune and district levels, and often participate in medium-sized tournaments.}}
+          
+    \resumeSubHeadingListEnd 
+
+\end{document}
